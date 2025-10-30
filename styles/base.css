@@ -15,12 +15,17 @@
     box-sizing: border-box;
 }
 
-header, footer, .grid {
+footer, main {
     max-width: 1200px; 
     margin: 0 auto;
 }
 
-.course-title{
+header {
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+#course-title{
     font-family: var(--title-font);
     background-color: var(--primary-color);
     padding:30px;
@@ -83,7 +88,7 @@ p {
     padding: 0;
 }
 
-.grid {
+main {
     display: grid;
     align-items: stretch;
     grid-template-columns: 2fr 1fr;
