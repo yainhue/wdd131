@@ -47,7 +47,7 @@ footer {
 	background-color: var(--main-color);
 	padding: 10px;
 	font-size: large;
-	color: whitesmoke;
+	color: white;
 	font-weight: 1;
 	display: block;
 	text-align: center;
@@ -68,7 +68,7 @@ footer {
 	font-size: 1.5rem;
 	border: 0;
 	background: none;
-	color: #000;
+	color: white;
 	position: absolute;
 	right: 3%;
 	top: 1%
@@ -90,7 +90,7 @@ footer {
 }
 
 .nav-wrapper h2 {
-	color: #fff;
+	color: white;
 }
 
 
@@ -109,18 +109,11 @@ footer {
 	color: white;
 }
 
-.navigation a:hover {
-	background-color: #bbb;
-	color: #333;
-	font-weight: 700;
-}
-
 /* when the button is clicked - the open class is toggled (added/removed) */
 
 .navigation.open a {
 	display: block;
 }
-
 
 .navigation a:hover {
 	background-color: #bbb;
@@ -131,50 +124,4 @@ footer {
 .active::before {
 	content: "» ";
 	/* just a wayfinding symbol for the user */
-}
-
-
-/* large view navigation ************************************/
-@media (min-width: 37.5em) {
-	.nav-wrapper {
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
-		background-color: var(--main-color);
-	}
-
-	h1 {
-		font-size: 2.5rem;
-		margin-left: 0;
-		text-align: center;
-	}
-
-	h2 {
-		font-size: 2rem;
-		text-align: center;
-	}
-
-	.figure-wrapper {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-	}
-
-	#menu {
-		display: none;
-		/* hide hamburger button */
-	}
-
-	.navigation {
-		display: flex;
-		flex-direction: row;
-		margin: auto 1px auto auto;
-
-	}
-
-	.navigation a {
-		display: block;
-		flex: 1 1 100%;
-		font-size: large
-	}
-
 }
