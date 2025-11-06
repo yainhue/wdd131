@@ -1,0 +1,180 @@
+:root {
+	--main-color: darkslateblue;
+}
+
+* {
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Roboto, serif;
+}
+
+main {
+	max-width: 1000px;
+}
+
+h1 {
+	text-align: center;
+	font-size: 1.5rem;
+	margin-left: 1rem;
+	margin: 2rem auto 2rem;
+}
+
+h2 {
+	font-size: 1.2rem;
+	text-align: center;
+	margin: 1rem;
+}
+
+figure {
+	padding: 1rem;
+	text-align: center;
+	font-size: large;
+	color: var(--main-color);
+	font-weight: bold;
+}
+
+figcaption {
+	margin-top: 0.5rem;
+}
+
+figure img {
+	border: 4px solid #333;
+}
+
+footer {
+	margin: 2rem auto auto auto;
+	background-color: var(--main-color);
+	padding: 10px;
+	font-size: large;
+	color: whitesmoke;
+	font-weight: 1;
+	display: block;
+	text-align: center;
+}
+
+#lastModified {
+	color: beige;
+}
+
+/* small view navigation */
+
+.figure-wrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+	position: absolute;
+	right: 3%;
+	top: 1%
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+.nav-wrapper {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: var(--main-color);
+}
+
+.nav-wrapper h2 {
+	color: #fff;
+}
+
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	list-style: none;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+}
+
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+
+.navigation.open a {
+	display: block;
+}
+
+
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+.active::before {
+	content: "» ";
+	/* just a wayfinding symbol for the user */
+}
+
+
+/* large view navigation ************************************/
+@media (min-width: 37.5em) {
+	.nav-wrapper {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		background-color: var(--main-color);
+	}
+
+	h1 {
+		font-size: 2.5rem;
+		margin-left: 0;
+		text-align: center;
+	}
+
+	h2 {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	.figure-wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	#menu {
+		display: none;
+		/* hide hamburger button */
+	}
+
+	.navigation {
+		display: flex;
+		flex-direction: row;
+		margin: auto 1px auto auto;
+
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+		font-size: large
+	}
+
+}

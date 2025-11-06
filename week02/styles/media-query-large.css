@@ -1,0 +1,12 @@
+/*asignar css especifico para media que cumpla con los requisitos: 
+       viewport    minimo tamaño
+*/
+@media screen and (min-width: 500px) {
+    header {
+        color: white;
+        background-color: black;
+    }
+    main {
+        grid-template-columns: 1fr 1fr;
+    }   
+}
