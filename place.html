@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W03 Assignment: Country Page</title>
-    <meta name="description" content="PLACEHOLDER">
+    <meta name="description" content="Explore Japan's culture, data, and weather with scenic views of Mount Fuji.">
     <meta name="author" content="Yain Huento">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,15 +18,15 @@
 <body>
     <header>
         <h1>Japan</h1>
-        <!-- <div class="line">---</div> -->
     </header>
     <main>
         <div class="hero">
             <picture>
-                <source media="(min-width: 1000)" srcset="/images/japan-hero-large.webp">
-                <source media="(min-width: 550)" srcset="/images/japan-hero-small.webp">
-                <img src="/images/japan-hero-medium.webp"
-                    alt="Scenic view of Mount Fuji with traditional Japanese pagoda at sunset" width="500" height="250">
+                <source media="(min-width: 700px)" srcset="/images/japan-hero-large.webp">
+                <source media="(min-width: 500px)" srcset="/images/japan-hero-medium.webp">
+                <img src="/images/japan-hero-small.webp"
+                    alt="Scenic view of Mount Fuji with traditional Japanese pagoda at sunset" width="500px"
+                    height="250px">
             </picture>
         </div><!--hero-->
         <div class="info-wrapper">
@@ -44,7 +44,8 @@
                 </ul>
             </div><!--data-->
             <div class="weather">
-                <h2>Weather</h2>
+                <h2 id="h2-small">Weather</h2>
+                <h2 id="h2-large">Weather ⛅</h2>
                 <div class="img-wrapper">
                     <img src="/images/weather.svg" alt="Weather icon showing sun and rain for mixed conditions">
                 </div>
@@ -56,7 +57,7 @@
                     <li><strong class="label">Wind Chill:</strong> <span class="value" id="windchill">????</span></li>
                 </ul>
             </div><!--weather-->
-        </div>
+        </div><!--info-wrapper-->
         <footer>
             <p>-- <span id="currentyear"></span> --</p>
             <p id="lastModified">placeholder</p>

@@ -2,7 +2,6 @@
     --background-color: rgb(204, 29, 29);
     --foreground-color: whitesmoke;
     --margin: 1rem 0 2rem;
-    /* background-color: var(--background-color); */
 }
 
 * {
@@ -10,10 +9,9 @@
     margin: 0 auto;
 }
 
-/* .line {
-    background-color: var(--foreground-color);
-    color: var(--foreground-color);
-} */
+picture {
+    background-color: var(--background-color);
+}
 
 h1 {
     background-color: var(--background-color);
@@ -21,14 +19,12 @@ h1 {
     color: var(--foreground-color);
     padding: 2rem;
     text-align: center;
-    border: 1px solid gray;
     font-family: "Yusei Magic", sans-serif;
     font-weight: bold;
     font-size: xxx-large;
 }
 
 .hero img {
-    /* margin-top: 1rem; */
     width: 100%;
     height: auto;
     object-fit: contain;
@@ -38,9 +34,7 @@ h1 {
     display: block;
 }
 
-
 h2 {
-    /* background-color: var(--background-color); */
     font-weight: bolder;
     color: var(--background-color);
     padding: 1rem;
@@ -51,6 +45,13 @@ h2 {
     font-size: xx-large;
 }
 
+#h2-small {
+    display: block;
+}
+
+#h2-large {
+    display: none;
+}
 
 ul {
     margin: var(--margin);
@@ -83,6 +84,7 @@ li {
 }
 
 .weather img {
+    display: block;
     width: 20%;
     height: auto;
     margin: 1rem auto 0;
@@ -94,7 +96,6 @@ footer {
     color: var(--foreground-color);
     padding: 2rem;
     text-align: center;
-    border: 1px solid gray;
     font-family: Verdana, sans-serif;
     font-weight: 400;
 }

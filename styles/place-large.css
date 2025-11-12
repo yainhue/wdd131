@@ -1,14 +1,34 @@
 /* large view navigation ************************************/
 @media (min-width: 37.5em) {
 
-    /* .hero img {
-        width: 100%;
-        object-fit: fill;
-    } */
+    /* disable weather img */
+    .weather img {
+        display: none;
+    }
 
     h2 {
         border-top: 0;
     }
+
+    #h2-small {
+        display: none;
+    }
+
+    #h2-large {
+        display: block;
+    }
+
+    .info-wrapper {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
 
     .data,
     .weather {
@@ -25,20 +45,12 @@
     /* gap: 15rem; */
 }
 
-/* disable weather img */
-.weather img {
-    display: none;
-}
-
 .data {
-    /* flex: 1; */
+    top: clamp(35vh, 30%, 30vh);
     left: 1%;
-    /* top: 47%; */
-    top: 47%;
 }
 
 .weather {
-    /* flex: 1; */
+    top: clamp(40vh, 60%, 70vh);
     right: 1%;
-    top: 100%;
 }
