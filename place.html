@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W03 Assignment: Country Page</title>
+    <meta name="description" content="PLACEHOLDER">
+    <meta name="author" content="Yain Huento">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/place.css">
+    <link rel="stylesheet" href="/styles/place-large.css">
+    <script src="/scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Japan</h1>
+        <!-- <div class="line">---</div> -->
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000)" srcset="/images/japan-hero-large.webp">
+                <source media="(min-width: 550)" srcset="/images/japan-hero-small.webp">
+                <img src="/images/japan-hero-medium.webp"
+                    alt="Scenic view of Mount Fuji with traditional Japanese pagoda at sunset" width="500" height="250">
+            </picture>
+        </div><!--hero-->
+        <div class="info-wrapper">
+            <div class="data">
+                <h2>Data</h2>
+                <ul>
+                    <li><strong class="label">Area:</strong> <span class="value">377,975 km2</span> </li>
+                    <li><strong class="label">Population:</strong> <span class="value">123,360,000</span></li>
+                    <li><strong class="label">Capital:</strong> <span class="value">Tokyo</span></li>
+                    <li><strong class="label">Language:</strong> <span class="value">Japanese</span></li>
+                    <li><strong class="label">Currency:</strong> <span class="value">Japanese yen</span></li>
+                    <li><strong class="label">Time Zone:</strong> <span class="value">UTC+09:00 (JST)</span></li>
+                    <li><strong class="label">Calling Code:</strong> <span class="value">+81</span></li>
+                    <li><strong class="label">Internet TLD:</strong> <span class="value">.jp</span></li>
+                </ul>
+            </div><!--data-->
+            <div class="weather">
+                <h2>Weather</h2>
+                <div class="img-wrapper">
+                    <img src="/images/weather.svg" alt="Weather icon showing sun and rain for mixed conditions">
+                </div>
+                <ul>
+                    <li><strong class="label">Temperature:</strong> <span class="value" id="temperature">????</span>
+                    </li>
+                    <li><strong class="label">Conditions:</strong> <span class="value">Partly Coudly</span></li>
+                    <li><strong class="label">Wind:</strong> <span class="value" id="wind">????</span></li>
+                    <li><strong class="label">Wind Chill:</strong> <span class="value" id="windchill">????</span></li>
+                </ul>
+            </div><!--weather-->
+        </div>
+        <footer>
+            <p>-- <span id="currentyear"></span> --</p>
+            <p id="lastModified">placeholder</p>
+        </footer>
+    </main>
+</body>
+
+</html>
