@@ -15,7 +15,6 @@ picture {
 
 h1 {
     background-color: var(--background-color);
-    font-weight: bolder;
     color: var(--foreground-color);
     padding: 2rem;
     text-align: center;
@@ -35,7 +34,6 @@ h1 {
 }
 
 h2 {
-    font-weight: bolder;
     color: var(--background-color);
     padding: 1rem;
     text-align: center;
@@ -64,7 +62,6 @@ li {
 }
 
 .label {
-    /* font-weight: bold; */
     flex: 1;
 }
 
@@ -88,7 +85,6 @@ li {
 
 footer {
     background-color: var(--background-color);
-    font-weight: bolder;
     color: var(--foreground-color);
     padding: 2rem;
     text-align: center;
