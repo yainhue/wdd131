@@ -6,16 +6,8 @@
         display: none;
     }
 
-    h2 {
-        border-top: 0;
-    }
-
-    #h2-small {
-        display: none;
-    }
-
-    #h2-large {
-        display: block;
+    #weather-h2::after {
+        content: " ⛅";
     }
 
     .info-wrapper {

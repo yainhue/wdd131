@@ -45,12 +45,8 @@ h2 {
     font-size: xx-large;
 }
 
-#h2-small {
-    display: block;
-}
-
-#h2-large {
-    display: none;
+#weather-h2::after {
+    content: "";
 }
 
 ul {
