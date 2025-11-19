@@ -1,0 +1,28 @@
+* {
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+body,
+head,
+img,
+h1 {
+    display: block;
+    text-align: center;
+}
+
+img {
+    background: rgb(48, 48, 48);
+    animation: fade 3s;
+}
+
+/* Animacion */
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

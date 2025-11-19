@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W04 Assignment: Picture Album Enhancement</title>
+    <meta name="description"
+        content="Explore a responsive photo album featuring Salt Lake Temple images, with a dynamic menu and clean layout for all devices.">
+    <meta name="author" content="Yain Huento">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <button id="menu"></button>
+        <nav class="nav-wrapper">
+            <h2>Temple Album</h2>
+            <ul class="navigation">
+                <li><a href="#" title="Home" class="active" id="homeButton">Home</a></li>
+                <li><a href="#" title="Old" id="oldButton">Old</a></li>
+                <li><a href="#" title="New" id="newButton">New</a></li>
+                <li><a href="#" title="Large" id="largeButton">Large</a></li>
+                <li><a href="#" title="Small" id="smallButton">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <div class="figure-wrapper">
+
+        </div>
+    </main>
+
+    <footer>
+
+        <p>-- <span id="currentyear"></span> --</p>
+        <p id="lastModified">placeholder</p>
+
+    </footer>
+</body>
+
+</html>

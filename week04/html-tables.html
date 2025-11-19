@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scripts/html-tables.css">
+</head>
+
+<body>
+    <table>
+        <caption>
+            Table 1: Account Feature Comparasion
+        </caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th id="title" colspan="3">ACME Wildwest Services</th>
+            </tr>
+            <tr>
+                <th class="blank"></th>
+                <th id="basic" headers="title">Basic</th>
+                <th id="premium" headers="title">Premium</th>
+                <th id="deluxe" headers="title">Deluxe</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th id="feature1">Feature 1</th>
+                <td headers="title basic feature1">✅</td>
+                <td headers="title premium feature1">✅</td>
+                <td headers="title deluxe feature1">✅</td>
+            </tr>
+            <tr>
+                <th id="feature2">Feature 2</th>
+                <td headers="title basic feature2">❌</td>
+                <td headers="title premium feature2">✅</td>
+                <td headers="title deluxe feature2">✅</td>
+            </tr>
+            <tr>
+                <th id="feature2">Feature 3</th>
+                <td headers="title basic feature3">❌</td>
+                <td headers="title premium feature3">❌</td>
+                <td headers="title deluxe feature3">✅</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

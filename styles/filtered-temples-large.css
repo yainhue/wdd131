@@ -1,0 +1,45 @@
+/* large view navigation ************************************/
+@media (min-width: 37.5em) {
+	.nav-wrapper {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		background-color: var(--main-color);
+	}
+
+	h1 {
+		font-size: 2.5rem;
+		margin-left: 0;
+		text-align: center;
+	}
+
+	h2 {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	.figure-wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		margin-left: -5%;
+	}
+
+	#menu {
+		display: none;
+		/* hide hamburger button */
+	}
+
+	.navigation {
+		display: flex;
+		flex-direction: row;
+		margin: auto 1px auto auto;
+
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+		font-size: large
+	}
+
+}

@@ -1,0 +1,132 @@
+:root {
+	--main-color: darkslateblue;
+}
+
+* {
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Roboto, serif;
+}
+
+main {
+	max-width: 1000px;
+}
+
+h1 {
+	text-align: center;
+	font-size: 1.5rem;
+	margin-left: 1rem;
+	margin: 2rem auto 2rem;
+}
+
+h2 {
+	font-size: 1.2rem;
+	text-align: center;
+	margin: 1rem;
+}
+
+.temple-card {
+	margin: 1rem;
+	padding: 1rem;
+	text-align: center;
+	background-color: rgb(231, 230, 230);
+	border: 2px solid rgb(194, 194, 194);
+}
+
+.temple-card h3 {
+	color: var(--main-color);
+	font-size: x-large;
+	margin: 1rem 0 1rem;
+}
+
+.temple-card img {
+	margin: 1rem 0 1rem;
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+
+}
+
+footer {
+	margin: 2rem auto auto auto;
+	background-color: var(--main-color);
+	padding: 10px;
+	font-size: large;
+	color: white;
+	font-weight: 1;
+	display: block;
+	text-align: center;
+}
+
+#lastModified {
+	color: beige;
+}
+
+/* small view navigation */
+
+.figure-wrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: white;
+	position: absolute;
+	right: 3%;
+	top: 1%
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+.nav-wrapper {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: var(--main-color);
+	color: white;
+}
+
+.nav-wrapper h2 {
+	color: white;
+}
+
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	list-style: none;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+
+.navigation.open a {
+	display: block;
+}
+
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+.active::before {
+	content: "» ";
+	/* just a wayfinding symbol for the user */
+}
