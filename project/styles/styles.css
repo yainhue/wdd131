@@ -1,0 +1,76 @@
+:root {
+    --main-color: rgb(62, 0, 119);
+    --secondary-color: rgb(0, 110, 110);
+    --background-color1: rgb(20, 20, 20);
+    --background-color2: rgb(34, 34, 34);
+    background-color: var(--background-color1);
+}
+
+* {
+    margin: auto auto 2rem auto;
+    max-width: 1000px;
+    text-align: center;
+    color: white;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: large;
+    font-weight: 500;
+}
+
+img {
+    width: 110px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* h3 {
+    background-color: var(--main-color);
+} */
+
+h1,
+h2,
+h3 {
+    padding: 1rem;
+    font-family: 'Exo 2', Tahoma, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--main-color);
+}
+
+h2 {
+    background-color: var(--secondary-color);
+}
+
+.wrapper {
+    background-color: var(--background-color2);
+    padding: 1rem;
+    width: 700px;
+}
+
+.wrapper img {
+    width: 700px;
+}
+
+.main {
+    background-color: var(--main-color);
+    padding: 1rem;
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+}
+
+.title {
+    font-size: x-large;
+    font-family: 'Exo 2', Tahoma, Verdana, sans-serif;
+}
+
+.body {
+    font-size: x-large;
+}
