@@ -1,6 +1,6 @@
 :root {
     --main-color: rgb(62, 0, 119);
-    --secondary-color: rgb(0, 110, 110);
+    --secondary-color: rgb(0, 92, 92);
     --background-color1: rgb(20, 20, 20);
     --background-color2: rgb(34, 34, 34);
     background-color: var(--background-color1);
