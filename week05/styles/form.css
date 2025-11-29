@@ -1,0 +1,86 @@
+:root {
+    --main-color: darkslateblue;
+    --secondary-color: rgb(166, 161, 194);
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, serif;
+    max-width: 540px;
+}
+
+header {
+    background-color: var(--main-color);
+    padding: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+.form-wrapper {
+    margin: 1rem 0 1rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+}
+
+.form-textareas,
+.form-checkbox,
+.form-options {
+    margin: 1rem 0 2rem 0;
+    width: 400px;
+    text-align: left;
+}
+
+.form-options select,
+.form-textareas input,
+#written-review {
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.form-radio {
+    display: flex;
+    gap: 2rem;
+    padding: 0.5rem;
+    /* justify-content: space-around; */
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+}
+
+.optional {
+    color: rgb(0, 0, 139);
+    font-size: smaller;
+}
+
+.required {
+    color: rgb(139, 0, 0);
+    font-size: smaller;
+}
+
+#fullname {
+    padding: 0.5rem;
+}
+
+button {
+    padding: 0.5rem;
+    font-size: large;
+    margin: 1rem 0 0 0;
+    width: 100%;
+}
+
+footer {
+    margin: 2rem auto auto auto;
+    background-color: var(--main-color);
+    padding: 1.5rem;
+    font-size: large;
+    color: white;
+    font-weight: 1;
+    display: block;
+    text-align: center;
+}

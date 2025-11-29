@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>W05 Assignment: Product Review Form</title>
+    <meta name="description" content="PLACEHOLDER">
+    <meta name="author" content="Yain Huento">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<!-- DONDE TE QUEDASTE: TERMINAR  Use localStorage to keep track of the number of
+  reviews completed by the user client by adding a counter to the form submission r
+  eview.html page. Every time that page is loaded successfully upon form submission, 
+  add one to the counter.  -->
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <div class="form-wrapper">
+        <form method="get" action="review.html">
+
+            <div class="form-options">
+                <label for="product">Product Name <span class="required">*</span></label>
+                <select id="product" name="product" required>
+                    <option value="prompt" disabled selected>Select a Product ...</option>
+                </select>
+            </div> <!--product name-->
+
+            <legend>Overall Rating <span class="required">*</span></legend>
+            <div class="form-radio">
+                <div class="rating">
+                    <label for="onestar">★</label>
+                    <input type="radio" name="rating" id="onestar" value="onestar" required>
+                </div>
+                <div class="rating">
+                    <label for="onestar">★★</label>
+                    <input type="radio" name="rating" id="twostars" value="twostars">
+                </div>
+                <div class="rating">
+                    <label for="onestar">★★★</label>
+                    <input type="radio" name="rating" id="twostars" value="twostars">
+                </div>
+                <div class="rating">
+                    <label for="onestar">★★★★</label>
+                    <input type="radio" name="rating" id="twostars" value="twostars">
+                </div>
+                <div class="rating">
+                    <label for="onestar">★★★★★</label>
+                    <input type="radio" name="rating" id="twostars" value="twostars">
+                </div>
+            </div> <!--overall rating-->
+
+            <div class="form-textareas">
+                <label for="date">Date of installation <span class="required">*</span></label>
+                <input type="date" id="date" name="date" required>
+            </div> <!--date-->
+
+            <legend>Which features did you find useful in the product?</legend>
+            <legend><em>(Check all that apply)</em></legend>
+            <div class="form-checkbox">
+                <div class="checkbox">
+                    <input type="checkbox" id="durability" name="durability">
+                    <label for="durability">Durability</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="ease" name="ease">
+                    <label for="ease">Ease of Use</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="performance" name="performance">
+                    <label for="performance">Performance</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="design" name="design">
+                    <label for="design">Design</label>
+                </div>
+            </div> <!--features-->
+
+            <label for="written-review">Written Review <span class="optional">(Optional)</span></label>
+            <div class="form-textareas">
+                <textarea id="written-review" name="written-review" rows="4"></textarea>
+            </div><!--written review-->
+
+            <label for="fullname">Your Name <span class="optional">(Optional)</span></label>
+            <div class="form-textareas">
+                <input type="text" id="fullname" name="'fullname">
+            </div> <!--full name-->
+
+            <button type="submit" id="submitBtn">Post Review</button>
+
+        </form>
+    </div> <!--form-wrapper-->
+    <footer>
+        <p>-- <span id="currentyear"></span> --</p>
+        <p id="lastModified">placeholder</p>
+    </footer>
+</body>
+
+</html>
