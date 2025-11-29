@@ -59,7 +59,7 @@ header {
 }
 
 .required {
-    color: rgb(139, 0, 0);
+    color: rgb(75, 9, 9);
     font-size: smaller;
 }
 
@@ -83,4 +83,18 @@ footer {
     font-weight: 1;
     display: block;
     text-align: center;
+}
+
+/* small view navigation ************************************/
+@media (max-width: 28em) {
+
+    .form-options select,
+    .form-textareas input,
+    #written-review {
+        width: 80%;
+    }
+
+    button {
+        width: 80%;
+    }
 }

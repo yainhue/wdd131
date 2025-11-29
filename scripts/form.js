@@ -45,12 +45,15 @@ function populateList(products) {
     products.forEach((p) => {
 
         const productParent = document.querySelector("#product");
+        const select = document.getElementById("product");
 
         // create option
         const product = document.createElement("option");
         product.textContent = (p.name);
         product.value = (p.id);
         productParent.appendChild(product);
+
+        select.selectedIndex = 0;
     });
 }
 

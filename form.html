@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=
     , initial-scale=1.0">
     <title>W05 Assignment: Product Review Form</title>
-    <meta name="description" content="PLACEHOLDER">
+    <meta name="description"
+        content="Submit product reviews easily with our responsive form, designed for user feedback and engagement.">
     <meta name="author" content="Yain Huento">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -29,31 +31,31 @@
             <div class="form-options">
                 <label for="product">Product Name <span class="required">*</span></label>
                 <select id="product" name="product" required>
-                    <option value="prompt" disabled selected>Select a Product ...</option>
+                    <option value="" disabled selected>Select a Product ...</option>
                 </select>
             </div> <!--product name-->
 
-            <legend>Overall Rating <span class="required">*</span></legend>
+            <p>Overall Rating <span class="required">*</span></p>
             <div class="form-radio">
                 <div class="rating">
                     <label for="onestar">★</label>
                     <input type="radio" name="rating" id="onestar" value="onestar" required>
                 </div>
                 <div class="rating">
-                    <label for="onestar">★★</label>
-                    <input type="radio" name="rating" id="twostars" value="twostars">
+                    <label for="twostars">★★</label>
+                    <input type="radio" name="rating" id="twostars" value="twostars" required>
                 </div>
                 <div class="rating">
-                    <label for="onestar">★★★</label>
-                    <input type="radio" name="rating" id="twostars" value="twostars">
+                    <label for="threestars">★★★</label>
+                    <input type="radio" name="rating" id="threestars" value="threestars" required>
                 </div>
                 <div class="rating">
-                    <label for="onestar">★★★★</label>
-                    <input type="radio" name="rating" id="twostars" value="twostars">
+                    <label for="fourstars">★★★★</label>
+                    <input type="radio" name="rating" id="fourstars" value="fourstars" required>
                 </div>
                 <div class="rating">
-                    <label for="onestar">★★★★★</label>
-                    <input type="radio" name="rating" id="twostars" value="twostars">
+                    <label for="fivestars">★★★★★</label>
+                    <input type="radio" name="rating" id="fivestars" value="fivestars" required>
                 </div>
             </div> <!--overall rating-->
 
@@ -62,8 +64,8 @@
                 <input type="date" id="date" name="date" required>
             </div> <!--date-->
 
-            <legend>Which features did you find useful in the product?</legend>
-            <legend><em>(Check all that apply)</em></legend>
+            <p>Which features did you find useful in the product?</p>
+            <p><em>(Check all that apply)</em></p>
             <div class="form-checkbox">
                 <div class="checkbox">
                     <input type="checkbox" id="durability" name="durability">
