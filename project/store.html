@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamerNexus</title>
+    <meta name="description" content="PLACEHOLDER">
+    <meta name="author" content="Yain Huento">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <script src="scripts/project.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/icon.webp" alt="GameNexus Logo">
+        <button id="menu"></button>
+        <div class="search-wrapper">
+            <label for="search-bar"></label>
+            <input type="text" id="search-bar" name="'search-bar" class="search-bar" placeholder="Search... 🔍︎">
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" title="home">Home</a></li>
+                <li><a href="store.html" title="store" class="active">Store</a></li>
+                <li><a href="profile.html" title="my-profile">My Profile</a></li>
+            </ul>
+            <img class="nav-img" src="images/icon.webp" alt="GameNexus Logo">
+        </nav>
+    </header>
+
+    <div class="hero" id="store-hero">
+        <img src="images/hero-store.webp" alt="Two gamers sit back-to-back amid glowing retro computers and neon.">
+        <div class="hero-content" id="store-hero-content">
+            <!-- <p id="welcome">WELCOME TO</p> -->
+            <h1>Store</h1>
+            <!-- <p id="motto">Level up your gaming experience.</p> -->
+            <!-- <a href="store.html" class="browse-btn">Browse Games</a> -->
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <h2>Discounts & Events 🎯</h2>
+        <div class="discounts-wrapper">
+            <p class="discount-arrow">◄</p>
+            <div class="discount-card">
+                <img src="images/game1.webp" alt="Cover of Medieval Warfare 2" loading="lazy">
+                <h3>Medieval Warfare 2</h3>
+                <p class="discount-description">Lorem ipsum dolor sit amet.</p>
+                <div class="discount-prices-wrapper">
+                    <p class="discount-off">-75%</p>
+                    <div class="discount-prices">
+                        <p class="discount-oldp">$24.99</p>
+                        <p class="discount-newp">$6.24 USD</p>
+                    </div>
+                </div>
+            </div>
+            <div class="discount-card">
+                <img src="images/game4.webp" alt="Cover of Pixel Farmers" loading="lazy">
+                <h3>Pixel Farmers</h3>
+                <p class="discount-description">Lorem ipsum dolor sit amet.</p>
+                <div class="discount-prices-wrapper">
+                    <p class="discount-off">-75%</p>
+                    <div class="discount-prices">
+                        <p class="discount-oldp">$24.99</p>
+                        <p class="discount-newp">$6.24 USD</p>
+                    </div>
+                </div>
+            </div>
+            <div class="discount-card">
+                <img src="images/game2.webp" alt="Cover of Apocalipty War" loading="lazy">
+                <h3>Apocalipty War</h3>
+                <p class="discount-description">Lorem ipsum dolor sit amet.</p>
+                <div class="discount-prices-wrapper">
+                    <p class="discount-off">-45%</p>
+                    <div class="discount-prices">
+                        <p class="discount-oldp">$20.99</p>
+                        <p class="discount-newp">$4.24 USD</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="discount-arrow">►</p>
+        </div>
+        <p class="store-marker">■□□□</p>
+        <h2 id="store-cta">Don't want to miss any event?</h2>
+        <a href="#newsletter" class="browse-btn" id="newsletter-btn">Subscribe to the newsletter</a>
+    </div>
+
+    <div class="wrapper">
+        <h2>Browse By Category 📦</h2>
+        <div class="categories-wrapper">
+            <p class="discount-arrow">◄</p>
+            <div class="category-wrapper">
+                <img src="images/category1.webp"
+                    alt="Armored knight stands silhouetted in misty forest holding sword alone." loading="lazy">
+                <p class="category">Story-rich</p>
+            </div>
+            <div class="category-wrapper">
+                <img src="images/category2.webp" alt="Impressionist bouquet of red and pink roses in ceramic vase."
+                    loading="lazy">
+                <p class="category">Adventure</p>
+            </div>
+            <div class="category-wrapper">
+                <img src="images/category3.webp"
+                    alt="Close-up of ornate golden armor chestplate with engraved medieval patterns." loading="lazy">
+                <p class="category">Fighting</p>
+            </div>
+            <div class="category-wrapper">
+                <img src="images/category4.webp"
+                    alt="Traditional Japanese woodblock print of blossoming branch with calligraphy seals."
+                    loading="lazy">
+                <p class="category">Puzzle</p>
+            </div>
+
+            <p class="discount-arrow">►</p>
+        </div>
+        <p class="store-marker">■□□□□□</p>
+    </div>
+
+    <div class="wrapper">
+        <div class="collections-wrapper">
+            <div class="collections-names">
+                <p class="collection-title-active">New & Trending</p>
+                <p class="collection-title">Top Sellers</p>
+                <p class="collection-title">Popular Upcoming</p>
+                <p class="collection-title">Specials</p>
+                <p class="collection-title">Trending Free</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <h2>Don't want to miss anything?</h2>
+        <h3 id="newsletter">Subscribe to the newsletter</h3>
+        <div class="form-wrapper">
+            <form method="get" action="thankyou.html">
+
+                <div class="column1">
+                    <label for="firstname">First Name <span class="required">*</span></label>
+                    <div class="form-textareas">
+                        <input type="text" id="firstname" name="firstname" placeholder="Jhon" required>
+                    </div> <!--firstname-->
+
+                    <label for="email">Email <span class="required">*</span></label>
+                    <div class="form-textareas">
+                        <input type="email" id="email" name="email" placeholder="jhondoe@email.com" required>
+                    </div> <!--email-->
+                </div>
+
+                <div class="column2">
+                    <label for="lastname">Last Name <span class="required">*</span></label>
+                    <div class="form-textareas">
+                        <input type="text" id="lastname" name="lastname" placeholder="Doe" required>
+                    </div> <!--lastname-->
+
+                    <label for="phone">Phone Number <span class="optional">(Optional)</span></label>
+                    <div class="form-textareas">
+                        <input id="phone" name="phone" type="tel" placeholder="123-456-7890"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    </div> <!--phone-->
+                </div>
+
+                <div class="column3">
+                    <p>What types of emails would you like to receive? <span class="optional">(Optional)</span></p>
+                    <p id="check-all"><em>(Check all that apply) </em></p>
+                    <div class="form-checkbox">
+                        <div class="checkbox">
+                            <input type="checkbox" id="events" name="events">
+                            <label for="events">Events</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="new-releases" name="new-releases">
+                            <label for="new-releases">New Releases</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="discounts" name="discounts">
+                            <label for="discounts">Discounts</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="news" name="news">
+                            <label for="news">News</label>
+                        </div>
+                    </div> <!--types-->
+                </div>
+
+                <div class="form-catpcha">
+                    <p>Please verify that you are human.<span class="required">*</span></p>
+                    <img src="images/captcha.png" alt="reCATPCHA">
+                </div> <!--form-catpcha-->
+
+                <button type="submit" id="submitBtn">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p><span id="currentyear">@currentyear</span>⠀—⠀<span id="lastModified">@lastmod</span></p>
+        <p id="footer-complete">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Nihil ab tempore
+            accusamus corrupti suscipit inventore nisi, harum, molestiae placeat dolorum soluta dicta vel ea
+            recusandae quae expedita? Expedita, voluptatum iste? Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Culpa doloribus totam natus harum voluptate cum reiciendis. Rerum qui eaque architecto harum, totam
+            minima, possimus ea repudiandae, dignissimos magnam quos neque.</p>
+        <div id="footer-extra"></div>
+    </footer>
+
+</body>
+
+</html>

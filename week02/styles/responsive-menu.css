@@ -12,11 +12,11 @@ h1 {
 }
 
 h2 {
-		font-size: 1.2rem;
-		color: navy;
-		text-align: left;
-		margin: 1rem;
-	}
+	font-size: 1.2rem;
+	color: navy;
+	text-align: left;
+	margin: 1rem;
+}
 
 nav {
 	max-width: 700px;
@@ -29,8 +29,8 @@ nav {
 	border: 0;
 	background: none;
 	color: #000;
-    position: absolute;
-    right: 3%;
+	position: absolute;
+	right: 3%;
 }
 
 #menu::before {
@@ -57,6 +57,7 @@ nav {
 	text-decoration: none;
 	color: #fff;
 }
+
 .navigation a:hover {
 	background-color: #bbb;
 	color: #333;
@@ -69,7 +70,8 @@ nav {
 }
 
 .active::before {
-	content: "📍";  /* just a wayfinding symbol for the user */
+	content: "📍";
+	/* just a wayfinding symbol for the user */
 }
 
 .stuff {
@@ -78,7 +80,7 @@ nav {
 	background-color: #bed;
 	max-width: 580px;
 	height: 100vh;
-	
+
 }
 
 /* large view navigation ************************************/
@@ -88,14 +90,15 @@ nav {
 		margin-left: 0;
 		text-align: center;
 	}
-	
+
 	h2 {
 		font-size: 2rem;
 		text-align: center;
 	}
 
 	#menu {
-		display: none; /* hide hamburger button */
+		display: none;
+		/* hide hamburger button */
 	}
 
 	.navigation {
@@ -106,7 +109,7 @@ nav {
 		display: block;
 		flex: 1 1 100%;
 	}
-	
+
 	.stuff {
 		margin: 1rem auto;
 	}
