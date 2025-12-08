@@ -20,7 +20,7 @@
 <body>
     <header>
         <img src="images/icon.webp" alt="GameNexus Logo">
-        <button id="menu"></button>
+        <button aria-label="Toggle navigation menu" id="menu"></button>
         <div class="search-wrapper">
             <label for="search-bar"></label>
             <input type="text" id="search-bar" name="'search-bar" class="search-bar" placeholder="Search... 🔍︎">
@@ -35,134 +35,137 @@
         </nav>
     </header>
 
-    <div class="wrapper" id="profile-wrapper">
-        <div>
-            <div class="profile-info">
-                <h3 class="profile-h2">My Profile</h3>
-                <h2 class="profile-name">BlurGamer2003</h2>
-            </div>
-            <div class="profile-img-wrapper">
-                <img src="images/pfp6.webp" alt="BlurGamer2003's profile picture">
-                <div class="profile-description">
-                    <p>Jhon Doe - Gamer</p>
-                    <p>Argentina 🏴</p>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis numquam quae ab laborum
-                        nobis
-                        labore
-                        nesciunt? Quae sit, nesciunt provident, ullam facilis iusto eum autem doloremque soluta corporis
-                        laboriosam consequuntur!</p>
+    <main>
+        <div class="wrapper" id="profile-wrapper">
+            <div>
+                <div class="profile-info">
+                    <h3 class="profile-h2">My Profile</h3>
+                    <h2 class="profile-name">BlurGamer2003</h2>
                 </div>
-            </div>
-            <div class="profile-comments-wrapper">
-                <h4>🖹 1 Comment</h4>
-                <!-- <div class="profile-comments"> -->
-                <div class="profile-friends">
-                    <img src="https://placecats.com/50/50" alt="CatLover3096's profile picture" loading="lazy">
-                    <div class="friends-info">
-                        <p>CatLover365</p>
-                        <p class="friends-status">Hello there!</p>
+                <div class="profile-img-wrapper">
+                    <img src="images/pfp6.webp" alt="BlurGamer2003's profile picture">
+                    <div class="profile-description">
+                        <p>Jhon Doe - Gamer</p>
+                        <p>Argentina 🏴</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis numquam quae ab laborum
+                            nobis
+                            labore
+                            nesciunt? Quae sit, nesciunt provident, ullam facilis iusto eum autem doloremque soluta
+                            corporis
+                            laboriosam consequuntur!</p>
                     </div>
                 </div>
-                <!-- </div> -->
-            </div>
-            <div class="profile-empty"></div>
-        </div>
-        <div class="aside">
-            <p class="profile-status">Currently Online</p>
-            <div class="profile-actions-wrapper">
-                <h4>Actions</h4>
-                <div class="profile-actions">
-                    <p class="action">✎ Edit my Profile</p>
-                    <p class="action">● Games <span class="amount">(15)</span></p>
-                    <p class="action">● Friends <span class="amount">(7)</span></p>
-                    <p class="action">● Groups <span class="amount">(2)</span></p>
-                    <p class="action">● Inventory</p>
-                    <p class="action">● Screenshots <span class="amount">(0)</span></p>
-                    <p class="action">● Videos <span class="amount">(0)</span></p>
-                    <p class="action">● Guides <span class="amount">(0)</span></p>
-                    <p class="action">● Workshop <span class="amount">(0)</span></p>
-                </div>
-            </div>
-            <div class="profile-stats-wrapper">
-                <h4>Gameplay Stats</h4>
-                <div class="profile-stats">
-                    <div class="stat">
-                        <p class="stat-category">Member since:</p>
-                        <p class="stat-data">December 16, 2011</p>
-                    </div>
-                    <div class="stat">
-                        <p class="stat-category">Rating:</p>
-                        <p class="stat-data">5248</p>
-                    </div>
-                    <div class="stat">
-                        <p class="stat-category">Playing time:</p>
-                        <p class="stat-data">10.0hrs past 2 weeks</p>
-                    </div>
-                    <div class="stat">
-                        <p class="stat-category">Total hours played:</p>
-                        <p class="stat-data">1,245 hrs</p>
-                    </div>
-                    <div class="stat">
-                        <p class="stat-category">Achievements unlocked:</p>
-                        <p class="stat-data">312</p>
-                    </div>
-                    <div class="stat">
-                        <p class="stat-category">Badges earned:</p>
-                        <p class="stat-data">24</p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="profile-friends-wrapper">
-                <h4>Friends</h4>
-                <div class="friends-wrapper">
+                <div class="profile-comments-wrapper">
+                    <h3>🖹 1 Comment</h3>
+                    <!-- <div class="profile-comments"> -->
                     <div class="profile-friends">
-                        <img src="https://placecats.com/50/50" alt="ESTO ES UN PLACEHOLDER" loading="lazy">
+                        <img src="https://placecats.com/50/50" alt="CatLover3096's profile picture" loading="lazy">
                         <div class="friends-info">
                             <p>CatLover365</p>
-                            <p class="friends-status">Online</p>
+                            <p class="friends-status">Hello there!</p>
                         </div>
                     </div>
-                    <div class="profile-friends">
-                        <img src="images/pfp1.webp" alt="PixelBro's profile picture" loading="lazy">
-                        <div class="friends-info">
-                            <p>PixelBro</p>
-                            <p class="friends-status">Offline</p>
+                    <!-- </div> -->
+                </div>
+                <div class="profile-empty"></div>
+            </div>
+            <div class="aside">
+                <p class="profile-status">Currently Online</p>
+                <div class="profile-actions-wrapper">
+                    <h3>Actions</h3>
+                    <div class="profile-actions">
+                        <p class="action">✎ Edit my Profile</p>
+                        <p class="action">● Games <span class="amount">(15)</span></p>
+                        <p class="action">● Friends <span class="amount">(7)</span></p>
+                        <p class="action">● Groups <span class="amount">(2)</span></p>
+                        <p class="action">● Inventory</p>
+                        <p class="action">● Screenshots <span class="amount">(0)</span></p>
+                        <p class="action">● Videos <span class="amount">(0)</span></p>
+                        <p class="action">● Guides <span class="amount">(0)</span></p>
+                        <p class="action">● Workshop <span class="amount">(0)</span></p>
+                    </div>
+                </div>
+                <div class="profile-stats-wrapper">
+                    <h3>Gameplay Stats</h3>
+                    <div class="profile-stats">
+                        <div class="stat">
+                            <p class="stat-category">Member since:</p>
+                            <p class="stat-data">December 16, 2011</p>
+                        </div>
+                        <div class="stat">
+                            <p class="stat-category">Rating:</p>
+                            <p class="stat-data">5248</p>
+                        </div>
+                        <div class="stat">
+                            <p class="stat-category">Playing time:</p>
+                            <p class="stat-data">10.0hrs past 2 weeks</p>
+                        </div>
+                        <div class="stat">
+                            <p class="stat-category">Total hours played:</p>
+                            <p class="stat-data">1,245 hrs</p>
+                        </div>
+                        <div class="stat">
+                            <p class="stat-category">Achievements unlocked:</p>
+                            <p class="stat-data">312</p>
+                        </div>
+                        <div class="stat">
+                            <p class="stat-category">Badges earned:</p>
+                            <p class="stat-data">24</p>
                         </div>
                     </div>
-                    <div class="profile-friends">
-                        <img src="images/pfp2.webp" alt="WhiskyWarrior's profile picture" loading="lazy">
-                        <div class="friends-info">
-                            <p>WhiskyWarrior</p>
-                            <p class="friends-status">In-Game: Medieval Warfare 2</p>
+
+                </div>
+                <div class="profile-friends-wrapper">
+                    <h3>Friends</h3>
+                    <div class="friends-wrapper">
+                        <div class="profile-friends">
+                            <img src="https://placecats.com/50/50" alt="ESTO ES UN PLACEHOLDER" loading="lazy">
+                            <div class="friends-info">
+                                <p>CatLover365</p>
+                                <p class="friends-status">Online</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="profile-friends">
-                        <img src="images/pfp3.webp" alt="tricksterChief's profile picture" loading="lazy">
-                        <div class="friends-info">
-                            <p>tricksterChief</p>
-                            <p class="friends-status">Away</p>
+                        <div class="profile-friends">
+                            <img src="images/pfp1.webp" alt="PixelBro's profile picture" loading="lazy">
+                            <div class="friends-info">
+                                <p>PixelBro</p>
+                                <p class="friends-status">Offline</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="profile-friends">
-                        <img src="images/pfp4.webp" alt="TTacticianN's profile picture" loading="lazy">
-                        <div class="friends-info">
-                            <p>TTacticianN</p>
-                            <p class="friends-status">Busy</p>
+                        <div class="profile-friends">
+                            <img src="images/pfp2.webp" alt="WhiskyWarrior's profile picture" loading="lazy">
+                            <div class="friends-info">
+                                <p>WhiskyWarrior</p>
+                                <p class="friends-status">In-Game: Medieval Warfare 2</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="profile-friends">
-                        <img src="images/pfp5.webp" alt="MoonByte's profile picture" loading="lazy">
-                        <div class="friends-info">
-                            <p>MoonByte</p>
-                            <p class="friends-status">Snoozing</p>
+                        <div class="profile-friends">
+                            <img src="images/pfp3.webp" alt="tricksterChief's profile picture" loading="lazy">
+                            <div class="friends-info">
+                                <p>tricksterChief</p>
+                                <p class="friends-status">Away</p>
+                            </div>
+                        </div>
+                        <div class="profile-friends">
+                            <img src="images/pfp4.webp" alt="TTacticianN's profile picture" loading="lazy">
+                            <div class="friends-info">
+                                <p>TTacticianN</p>
+                                <p class="friends-status">Busy</p>
+                            </div>
+                        </div>
+                        <div class="profile-friends">
+                            <img src="images/pfp5.webp" alt="MoonByte's profile picture" loading="lazy">
+                            <div class="friends-info">
+                                <p>MoonByte</p>
+                                <p class="friends-status">Snoozing</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <footer>
         <p><span id="currentyear">@currentyear</span>⠀—⠀<span id="lastModified">@lastmod</span></p>
